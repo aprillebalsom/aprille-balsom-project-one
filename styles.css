@@ -234,18 +234,26 @@ i {
     width: 50%;
 }
 
-.text-left,
-.img-left {
-    float: left;
-}
-
 .text-right,
 .img-right {
     float: right;
 }
 
+.text-left,
+.img-left {
+    float: left;
+}
+
 .blog-text{
-    padding: 4% 0;
+    padding: 6% 0;
+}
+
+.text-left {
+    padding-left: 4%;
+}
+
+.text-right {
+    padding-right: 4%;
 }
 
 .blog-text p {
@@ -265,20 +273,22 @@ i {
 
 .footer-nav,
 .contact {
-    width: 25%;
+    /* width: 25%; */
+    width: 30%;
 }
 
 .update-container {
     text-align: center;
 
-    width: 50%;
+    /* width: 50%; */
+    width: 40%;
 }
 
 .update-container input[type="email"] {
     border: none;
 
     padding: 15px 0 15px 20px;
-    width: 70%;
+    width: 65%;
     float: left;
 }
 
@@ -292,7 +302,7 @@ button {
     text-align: center;
 
     padding: 0 10px;
-    width: 30%;
+    width: 35%;
 }
 
 .footer-nav {
