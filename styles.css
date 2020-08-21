@@ -41,7 +41,9 @@ button {
 h1 {
     font-family: 'East Sea Dokdo', cursive;
     font-size: 12.2rem;
+    font-weight: lighter;
     line-height: 94.3px;
+    
 
     padding: 150px 0;
 }
@@ -49,13 +51,15 @@ h1 {
 h2 {
     font-family: 'East Sea Dokdo', cursive;
     font-size: 7.5rem;
+    font-weight: lighter;
     line-height: 36px;  
 }
 
 h3 {
     font-family: 'East Sea Dokdo', cursive;
-    text-align: center;
     font-size: 5.5rem;
+    font-weight: lighter;
+    text-align: center;
     line-height: 36px;
 
     padding: 10px;
@@ -63,8 +67,9 @@ h3 {
 
 h4 {
     font-family: 'East Sea Dokdo', cursive;
-    text-align: right;
+    font-weight: lighter;
     font-size: 5rem;
+    text-align: right;
     line-height: 30px;
 
     padding: 10px;
@@ -118,6 +123,12 @@ header {
 
 .header-nav li {
     float: left;
+}
+ /* TODO ressearch if this is the best option */
+.hamburger-menu {
+    display: none;
+    color: #fff;
+    float: right;
 }
 /* header styles end */
 
@@ -202,29 +213,7 @@ i {
 /* icon-container styles end */
 
 
-/* gallery-container styles start */
-/* .gallery-container {
-    background-color: #F7DAE8;
-}
-
-.gallery-text,
-.gallery-container img {
-    float: left;
-    width: 50%;
-}
-
-.gallery-text {
-    padding: 80px 40px 40px;
-}
-
-.gallery-text p {
-    padding: 30px 0;
-}
-
-.gallery-text .read-more {
-    background-color: #A7059B;
-} */
-
+/* blog-container styles start */
 .blog-container {
     background-color: #F7DAE8;
 }
@@ -236,7 +225,7 @@ i {
 
 .text-right,
 .img-right {
-    float: right;
+    float:right;
 }
 
 .text-left,
@@ -248,6 +237,10 @@ i {
     padding: 6% 0;
 }
 
+.blog-text p {
+    padding: 20px 0;
+}
+
 .text-left {
     padding-left: 4%;
 }
@@ -256,11 +249,10 @@ i {
     padding-right: 4%;
 }
 
-.blog-text p {
-    padding: 20px 0;
+.blog-button {
+    background-color: #A7059B;
 }
-
-/* gallery-container styles end */
+/* blog-container styles end */
 /* main styles end */
 
 
@@ -273,14 +265,11 @@ i {
 
 .footer-nav,
 .contact {
-    /* width: 25%; */
     width: 30%;
 }
 
 .update-container {
     text-align: center;
-
-    /* width: 50%; */
     width: 40%;
 }
 
@@ -316,16 +305,60 @@ button {
 .footer-end {
     background-color: #201E21;
     color: #FFF;
-
     text-align: center;
-
     padding: 10px 0;
 }
 
 .footer-end a {
     color: #FFF;
-
     padding: 0;
 }
-
 /* footer styles end */
+
+@media (max-width: 1090px){
+
+.text-right,
+.img-right,
+.text-left,
+.img-left {
+    float: none;
+}
+
+.blog-container img,
+.blog-text {
+    width: 100%;
+}
+
+button {
+    font-size: 4rem;
+    padding: 4px 0;
+    /* TODO fix this */
+}
+
+
+}
+
+@media (max-width: 740px){
+
+}
+
+@media (max-width: 610px){
+  
+}
+
+@media (max-width: 450px){
+
+    .hamburger-menu {
+        display: inline-block;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    h1 {
+        font-size: 10rem;
+        /* font-weight: lighter; */
+    }
+    
+}
