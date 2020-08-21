@@ -203,7 +203,7 @@ i {
 
 
 /* gallery-container styles start */
-.gallery-container {
+/* .gallery-container {
     background-color: #F7DAE8;
 }
 
@@ -223,7 +223,35 @@ i {
 
 .gallery-text .read-more {
     background-color: #A7059B;
+} */
+
+.blog-container {
+    background-color: #F7DAE8;
 }
+
+.blog-container img,
+.blog-text {
+    width: 50%;
+}
+
+.text-left,
+.img-left {
+    float: left;
+}
+
+.text-right,
+.img-right {
+    float: right;
+}
+
+.blog-text{
+    padding: 4% 0;
+}
+
+.blog-text p {
+    padding: 20px 0;
+}
+
 /* gallery-container styles end */
 /* main styles end */
 
