@@ -147,11 +147,17 @@ header {
     margin: 0 5px;
 }
 
-.hamburger-menu {
+/* .hamburger-menu {
     display: none;
     color: #fff;
     float: right;
-}
+} */
+.hamburger-nav {
+    display: none;
+    color: #fff;
+    float: right;
+} 
+
 /* --HEADER STYLES END-- */
 
 
@@ -432,9 +438,9 @@ button {
         line-height: 65px;
     }
 
-    .hamburger-menu {
+    /* .hamburger-menu {
         display: inline-block;
-    }
+    } */
 
     .header-nav {
         visibility: hidden;
@@ -453,6 +459,57 @@ button {
     .blog-text a  {
         text-align: center;
     }
+
+    /* testing the nav */
+
+    .hamburger-nav {
+        display: block;
+    }
+    
+    ul.pop-out-nav {
+    background: #F7DAE8;
+    border-radius: 5px;
+	position: fixed;
+	z-index: 10;
+	width: 40%; 
+	right: -40%;
+	top: 0;
+	height: 25%;
+	transition: all 0.5s;
+    }
+
+    ul.pop-out-nav a {
+        border-bottom: 2px solid #210E21;
+        display: inline-block;
+        font-size: 3rem;
+        color: #210E21;
+        width: 100%;
+        padding: 10px;
+        transition: all 0.3s;
+    }
+
+    ul.pop-out-nav a:hover,
+    ul.pop-out-nav a:focus {
+        background: #FFF;
+    } 
+
+   
+    input[type="checkbox"]:checked + ul.pop-out-nav {
+        right: 0;
+    }
+
+    input[type="checkbox"] {
+        display: none; 
+    }
+
+    label[for="toggle"] {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        color: white;
+        z-index: 10;
+    }
+
 }
 /* --MEDIA QUERIES END-- */
 /* END OF STYLES */
