@@ -137,7 +137,6 @@ header {
 .icon-container,
 .footer-main {
     background-color: #FFE9E9;
-    
     padding: 80px 0;
 }
 
@@ -337,63 +336,23 @@ button {
 
 }
 
-@media (max-width: 740px){
+@media (max-width: 800px){
 
-}
-
-@media (max-width: 610px){
-  
-}
-
-@media (max-width: 450px){
-
-
-    .wrapper {
-        width: 95%;
-    }
-
-    /* HEADER STYLES END */
-    .hamburger-menu {
-        display: inline-block;
-    }
-
-    .header-nav {
-        display: none;
-    }
-
-    h1 {
-        font-size: 10rem;
-    }
-    /* HEADER STYLES END */
-
-    
-
-
-
-    /* ICON STYLES */
-    .icon-container li {
+    /* NEW-PRODUCT STYLES */
+    .new-product-image,
+    .new-product-text {
         float: none;
         width: 100%;
-        text-align: center;
-        padding: 20px 0;
     }
 
-    .icon-container a {
-        padding: 20px;
+    .new-product-text {
+        padding: 60px 0;
     }
-    /* ICON STYLES END*/
 
-
-    /* BLOG STYLES */
-    .blog-text,
-    .blog-text a  {
+    .new-product-text .read-more {
         text-align: center;
     }
-
-    .blog-text {
-       padding: 20px 0;
-    }
-    /* BLOG STYLES END*/
+    /* NEW-PRODUCT STYLES END*/
 
 
     /* FOOTER STYLES */
@@ -424,9 +383,81 @@ button {
     }
 
     button {
-        padding: 0 10px;
+        padding: 5px 10px;
         width: 50%;
     }
     /* FOOTER STYLES END */
+
+}
+
+@media (max-width: 610px){
+     h1 {
+        font-size: 10rem;
+    }
+
+    h1,
+    h2 {
+        line-height: 65px;
+    }
+
+    h3,
+    h4 {
+        font-size: 7.5rem;
+        line-height: 65px;
+    }
+
+    .hamburger-menu {
+        display: inline-block;
+    }
+
+    .header-nav {
+        display: none;
+    }
+    /* HEADER STYLES END */
+     /* ICON STYLES */
+     .icon-container {
+        padding: 40px 0;
+     }
+
+    .icon-container li {
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .icon-container a {
+        padding: 20px;
+    }
+    /* ICON STYLES END*/
+
+     /* EXHIBITION STYLES */
+    .exhibitions-container li:nth-child(3){
+       display: none;
+    }
+
+    .exhibitions-container li {
+        width: calc(50% - 10px);
+        margin: 0 5px;
+    }
+    /* EXHIBITION STYLES END*/
+
+
+    /* BLOG STYLES */
+    .blog-text,
+    .blog-text a  {
+        text-align: center;
+    }
+
+    .blog-text {
+       padding: 20px 0;
+    }
+    /* BLOG STYLES END*/
+  
+}
+
+@media (max-width: 450px){
+
+   
     
 }
