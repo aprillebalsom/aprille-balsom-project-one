@@ -91,7 +91,7 @@ img {
     max-width: 1024px;
     width: 90%;
     margin: 0 auto;
-}
+}                       
 
 .read-more {
     background-color: #0178A5;
@@ -100,8 +100,29 @@ img {
     font-size: 4.5rem;
     text-align: center;
     padding: 15px 25px;
-    /* margin: 5px auto; */
     display: inline-block;
+}
+
+.read-more:hover,
+.read-more:focus{
+    border: 5px #FFF solid;
+}
+
+.skip-link {
+    background-color:#0178A5;
+    color: #FFF;;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 3.2rem;
+    border-radius: 2px;
+    padding: 10px 5px;
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 10;
+}
+
+.skip-link:focus {
+    left: 0;
 }
 /* --GLOBAL STYLES END-- */
 
