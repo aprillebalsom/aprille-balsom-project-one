@@ -17,6 +17,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
+    font-weight: 400;
     line-height: 29px;
     letter-spacing: 0.2px;
     color: #210E21;
@@ -38,33 +39,34 @@ button {
     padding: 0;
 }
 
-h1 {
+
+h1, 
+h2, 
+h3, 
+h4 {
     font-family: 'East Sea Dokdo', cursive;
-    font-size: 12.2rem;
     font-weight: lighter;
+}
+
+h1 {
+    font-size: 12.2rem;
     line-height: 94.3px;
     padding: 30% 0;
 }
 
 h2 {
-    font-family: 'East Sea Dokdo', cursive;
     font-size: 7.5rem;
-    font-weight: lighter;
     line-height: 36px;  
 }
 
 h3 {
-    font-family: 'East Sea Dokdo', cursive;
     font-size: 5.5rem;
-    font-weight: lighter;
     text-align: center;
     line-height: 36px;
     padding: 10px;
 }
 
 h4 {
-    font-family: 'East Sea Dokdo', cursive;
-    font-weight: lighter;
     font-size: 5rem;
     line-height: 30px;
     padding: 10px;
@@ -288,7 +290,7 @@ button {
 }
 
 .footer-nav {
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .contact {
@@ -308,30 +310,35 @@ button {
 }
 /* footer styles end */
 
+
+/* MEDIA QUERIES START HERE */
+/* TODO add in screen sizes */
 @media (max-width: 1090px){
 
-.text-right,
-.img-right,
-.text-left,
-.img-left {
-    float: none;
-}
+    .text-right,
+    .img-right,
+    .text-left,
+    .img-left {
+        float: none;
+    }
 
-.blog-container img,
-.blog-text {
-    width: 100%;
-}
+    .blog-container img,
+    .blog-text {
+        width: 100%;
+    }
 
-.blog-text p {
-    padding: 40px 0;
-}
 
-button {
-    font-size: 4rem;
-    padding: 4px 0;
-    /* TODO fix this */
-}
+    .update-container input[type="email"] {
+        text-align: center;
+        padding-left: 0;
+        margin: 20px 0;
+        width: 98%;
+        float: none;
+    }
 
+    button {
+        width: 50%;
+    }
 
 }
 
@@ -356,8 +363,6 @@ button {
     .new-product-image a {
         margin: 0 auto;
     }
-
- 
     /* NEW-PRODUCT STYLES END*/
 
 
@@ -378,19 +383,6 @@ button {
     .footer-nav li {
         float: left;
         width: 25%;
-    }
-
-    .update-container input[type="email"] {
-        text-align: center;
-        padding-left: 0;
-        margin: 20px 0;
-        width: 98%;
-        float: none;
-    }
-
-    button {
-        padding: 5px 10px;
-        width: 50%;
     }
     /* FOOTER STYLES END */
 
@@ -418,7 +410,7 @@ button {
     }
 
     .header-nav {
-        display: none;
+        visibility: hidden;
     }
     /* HEADER STYLES END */
      /* ICON STYLES */
