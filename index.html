@@ -14,12 +14,12 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- START OF HEADER -->
-    <header>
+    <header id="home">
 
         <div class="wrapper">
             <nav class="header-nav">
                 <ul class="clearfix">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -28,11 +28,11 @@
 
             <!-- TESTING NAV -->
             <nav class="hamburger-nav">
-                <label for="toggle"><i class="fas fa-bars hamburger-menu"></i></label>
-                <input type="checkbox" id="toggle" name="toggle"> </input>
+                <label for="pop-out"><i class="fas fa-bars hamburger-icon"></i></label>
+                <input type="checkbox" id="pop-out" name="pop-out"> </input>
 
                 <ul class="pop-out-nav">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -98,18 +98,21 @@
         <div class="icon-container">
 
             <ul class="wrapper clearfix">
-                <li class="icon">
-                    <i class="far fa-images catalogue"></i>
+                <li class="icons">
+                    <i class="far fa-images icon"></i>
+                    <p class="sr-only"></p>
                     <a href="#">Catalogue</a>
                 </li>
             
-                <li class="icon">
-                    <i class="far fa-calendar-alt calendar"></i>
+                <li class="icons">
+                    <i class="far fa-calendar-alt icon"></i>
+                    <p class="sr-only"></p>
                     <a href="#">Events</a>
                 </li>
             
-                <li class="icon">
-                    <i class="far fa-handshake handshake"></i>
+                <li class="icons">
+                    <i class="far fa-handshake icon"></i>
+                    <p class="sr-only"></p>
                     <a href="#">Collaboration</a>
                 </li>
             </ul>
