@@ -468,28 +468,37 @@ button {
         display: block;
     }
     
-    .pop-out-nav {
+    /* .pop-out-nav {
     background: #F7DAE8;
 	position: fixed;
 	z-index: 10;
 	width: 40%; 
 	right: -40%;
 	top: 60px;
-	height: 160px;
+	height: 100%;;
 	transition: all 0.5s;
+    } */
+
+    .pop-out-nav {
+    background: #F7DAE8;
+	position: fixed;
+	z-index: 10;
+	width: 100px; 
+    right: 80px;
+    padding: 20px 0;
+	top: -180px;
+	height: 180px;;
+	transition: all 0.7s;
     }
 
     .pop-out-nav a {
         color: #210E21;
-        border-bottom: 1px solid #210E2180;
         font-size: 2rem;
         text-align: center;
         width: 100%;
         padding: 5px;
         display: inline-block;
-        transition-property: ease;
-        transition-duration: 0.4S;
-    }
+    } 
 
     .pop-out-nav a:hover,
     .pop-out-nav a:focus {
@@ -497,7 +506,7 @@ button {
     } 
 
     input[type="checkbox"]:checked + .pop-out-nav {
-        right: 0;
+        top: 0;
     }
 
     input[type="checkbox"] {
@@ -508,8 +517,7 @@ button {
         position: fixed;
         top: 20px;
         right: 20px;
-        color: white;
-        z-index: 10;
+        color: #FFF;
     }
 }
 /* --MEDIA QUERIES END-- */
