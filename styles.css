@@ -9,6 +9,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 /* REMOVE DEFAULT STYLES */
+body, 
 h1, 
 h2, 
 h3, 
@@ -424,7 +425,7 @@ button {
 }
 /* PORTRAIT MOBILE*/
 @media (max-width: 480px){
-     h1 {
+    h1 {
         font-size: 10rem;
     }
 
@@ -434,12 +435,7 @@ button {
         line-height: 65px;
     }
 
-    /* .hamburger-menu {
-        display: inline-block;
-    } */
-
     .header-nav {
-        /* visibility: hidden; */
         display: none;
     }
 
@@ -463,16 +459,16 @@ button {
     }
     
     .pop-out-nav {
-    background: #F7DAE8;
-    border-radius: 3px;
-	position: fixed;
-	z-index: 10;
-	width: 100px; 
-    right: 80px;
-    padding: 20px 0;
-	top: -180px;
-	height: 180px;;
-	transition: all 0.7s;
+        background: #F7DAE8;
+        border-radius: 3px;
+        height: 180px;
+        padding: 20px 0;
+        width: 100px; 
+        position: fixed;
+        right: 80px;
+        top: -180px;
+        z-index: 10;
+        transition: all 0.7s;
     }
 
     .pop-out-nav a {
@@ -497,11 +493,11 @@ button {
         top: 0;
     }
 
-    label[for="pop-out"] {
+    .hamburger-nav label[for="pop-out"] {
+        color: #FFF;
         position: fixed;
         top: 20px;
-        right: 20px;
-        color: #FFF;
+        right: 20px; 
     }
 }
 /* --MEDIA QUERIES END-- */
